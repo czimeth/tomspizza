@@ -1,0 +1,11 @@
+[
+  '{{repeat(8, 8)}}',
+  {
+    _id: '{{objectId()}}',
+    price: '{{floating(2, 10, 2, "0")}}',
+    name: function (tags,index) {
+      var ingerdients = ['Coke', 'Soda', 'Light Coke', 'Beer', 'Mate Tea', 'Vodka', 'Burn','Dr. Pepper' ];
+      return ingerdients[index];
+    }
+  }
+]

@@ -1,0 +1,11 @@
+[
+  '{{repeat(11, 11)}}',
+  {
+    _id: '{{index()}}',
+    price: '{{floating(2, 10, 2, "0")}}',
+    name: function (tags,index) {
+      var ingerdients = ['Sliced Pepperoni', 'Pre-Cooked Bacon Pieces', 'Cooked Beef Topping', 'Cooked Italian Sausage', 'Cooked Italian Style Meatballs', 'Sliced Turkey Breast', 'Sliced Hard Salami','Traditional Feta' , 'Parmesan Cheese', 'Mozzarella Cheese', 'Edami Cheese'];
+      return ingerdients[index];
+    }
+  }
+]

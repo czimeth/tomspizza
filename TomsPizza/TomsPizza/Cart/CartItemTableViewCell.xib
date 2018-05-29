@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fa-solid-900.ttf">
+            <string>FontAwesome5FreeSolid</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CartItemTableViewCell" id="zrR-qq-Gnw" customClass="CartItemTableViewCell" customModule="TomsPizza" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zrR-qq-Gnw" id="UG9-CZ-pgN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-ZK-utB">
+                        <rect key="frame" x="65" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDc-RQ-ruB">
+                        <rect key="frame" x="321" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcZ-qN-s2H">
+                        <rect key="frame" x="8" y="8" width="30" height="27.5"/>
+                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="17"/>
+                        <state key="normal" title="">
+                            <color key="titleColor" red="0.2784313725" green="0.40784313729999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gcv-ZK-utB" firstAttribute="centerY" secondItem="UG9-CZ-pgN" secondAttribute="centerY" id="0G8-Yj-sj0"/>
+                    <constraint firstItem="bcZ-qN-s2H" firstAttribute="leading" secondItem="UG9-CZ-pgN" secondAttribute="leading" constant="8" id="4Du-cC-22J"/>
+                    <constraint firstItem="bcZ-qN-s2H" firstAttribute="top" secondItem="UG9-CZ-pgN" secondAttribute="top" constant="8" id="8m8-Na-dsx"/>
+                    <constraint firstAttribute="bottom" secondItem="bcZ-qN-s2H" secondAttribute="bottom" constant="8" id="FFs-jH-8He"/>
+                    <constraint firstItem="Gcv-ZK-utB" firstAttribute="leading" secondItem="UG9-CZ-pgN" secondAttribute="leadingMargin" constant="49" id="au3-cF-0gc"/>
+                    <constraint firstItem="XDc-RQ-ruB" firstAttribute="centerY" secondItem="UG9-CZ-pgN" secondAttribute="centerY" id="bA2-Ja-cYs"/>
+                    <constraint firstAttribute="trailing" secondItem="XDc-RQ-ruB" secondAttribute="trailing" constant="12" id="f5m-Pw-9sY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="nameLabel" destination="Gcv-ZK-utB" id="Sas-3d-cRO"/>
+                <outlet property="priceLabel" destination="XDc-RQ-ruB" id="hfq-HU-uSH"/>
+                <outlet property="removeButton" destination="bcZ-qN-s2H" id="ffY-qc-zyt"/>
+            </connections>
+            <point key="canvasLocation" x="11.5" y="-41"/>
+        </tableViewCell>
+    </objects>
+</document>

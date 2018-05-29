@@ -1,0 +1,23 @@
+[
+  {
+    base_price: '{{floating(14, 20, 2, "0")}}',
+    pizzas: [
+      '{{repeat(6)}}',
+      {
+        id: '{{objectId()}}',
+        name: function (tags, index) {
+      	var fruits = ['Margharita', 'Napoli', 'Piccolo', 'Butcher', 'Hungarian', 'Peasant'];
+      	return fruits[index];
+    	},
+        imageURL: function (tags, index) {
+      	var imageURLs = [null, 'https://www.cicis.com/media/1176/pizza_trad_pepperonibeef.png', 'http://www.sickchirpse.com/wp-content/uploads/2016/01/pizza-stock.jpg', 'https://cdn.modpizza.com/wp-content/uploads/2016/11/mod-pizza-maddy-default-e1479167621575.png', 'https://cdn.modpizza.com/wp-content/uploads/2016/11/mod-pizza-dominic-default-e1479168048226.png', 'https://cdn.modpizza.com/wp-content/uploads/2016/11/mod-pizza-caspian-default-e1479167513823.png'];
+      	return imageURLs[index];
+    	},
+        ingredients: function (tags, index) {
+      	var fruits = [tags.integer(0,3), tags.integer(4,7), tags.integer(8,10)];
+      	return fruits;
+    	}
+      }
+    ]
+  }
+]
